@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(to bottom right, #44d2ec, #4db5e9);
+    color: #000;
+    font-family: 'Arial', sans-serif;
+  }
+  .shadow-custom {
+    box-shadow: 4px 4px 0px #000;
+  }
+  .btn-custom {
+    box-shadow: 4px 4px 0px #000;
+  }
+  .hero-text {
+    text-shadow: 2px 2px #000;
+  }
+  .search-box {
+    box-shadow: 4px 4px 0px #000;
+  }
+  .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 0px #000;
+  }
