@@ -5,44 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Landing Page Kelas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 px-4">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav gap-3">
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Kelas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Kontak</a>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <!-- Menu Kiri -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Kelas</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Kontak</a></li>
+        </ul>
+  
+        <!-- Menu Kanan -->
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-link text-dark fw-semibold">Masuk</a>
+          <a href="#" class="btn btn-primary fw-semibold shadow-sm">Daftar</a>
+        </div>
+      </div>
     </div>
-    <div class="d-flex gap-2">
-      <a class="btn btn-link fw-bold text-dark text-decoration-none" href="#">Masuk</a>
-      <a class="btn btn-info text-white fw-bold btn-custom" href="#">Daftar</a>
-    </div>
-  </div>
-</nav>
+  </nav>
+  
 
 <!-- Hero Section -->
 <section class="container py-5">
@@ -66,6 +60,260 @@
     </div>
   </div>
 </section>
+
+<!-- Section Kategori Populer -->
+<section class="py-5 bg-white">
+    <div class="container">
+      <!-- Section: Kategori Populer -->
+      <h4 class="text-center mb-4">Kategori <span class="text-primary">Populer</span></h4>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-card bg-warning text-dark">💻Pemrograman</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-card bg-danger text-white">🎨Desain</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-card bg-success text-white">📈Marketing</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-card bg-info text-dark">🏢Bisnis</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-card bg-primary text-white">📊Data Science</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-card bg-orange text-dark" style="background-color: orange;">🎤Public Speaking</div>
+        </div>
+      </div>
+  
+      <!-- Section: Rekomendasi Kelas -->
+      <h4 class="text-center mt-5 mb-4">Rekomendasi <span class="text-success">Kelas</span></h4>
+      <div class="row g-4">
+        <!-- Card contoh -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-class position-relative h-100">
+            <div class="badge-custom">Populer</div>
+            <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Data Science" />
+            <div class="card-body">
+              <p class="mb-1 fw-bold">Data Science & Machine Learning</p>
+              <p class="text-muted" style="font-size: 0.85rem;">Kuasai analisis data dan algoritma machine learning untuk karir di bidang data</p>
+              <p class="fw-semibold mb-2">Rp 599.000</p>
+              <button class="lihat-kelas-btn">Lihat Kelas</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-class position-relative h-100">
+            <div class="badge-custom">Populer</div>
+            <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Data Science" />
+            <div class="card-body">
+              <p class="mb-1 fw-bold">Data Science & Machine Learning</p>
+              <p class="text-muted" style="font-size: 0.85rem;">Kuasai analisis data dan algoritma machine learning untuk karir di bidang data</p>
+              <p class="fw-semibold mb-2">Rp 599.000</p>
+              <button class="lihat-kelas-btn">Lihat Kelas</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-class position-relative h-100">
+            <div class="badge-custom">Populer</div>
+            <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Data Science" />
+            <div class="card-body">
+              <p class="mb-1 fw-bold">Data Science & Machine Learning</p>
+              <p class="text-muted" style="font-size: 0.85rem;">Kuasai analisis data dan algoritma machine learning untuk karir di bidang data</p>
+              <p class="fw-semibold mb-2">Rp 599.000</p>
+              <button class="lihat-kelas-btn">Lihat Kelas</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card card-class position-relative h-100">
+            <div class="badge-custom">Populer</div>
+            <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Data Science" />
+            <div class="card-body">
+              <p class="mb-1 fw-bold">Data Science & Machine Learning</p>
+              <p class="text-muted" style="font-size: 0.85rem;">Kuasai analisis data dan algoritma machine learning untuk karir di bidang data</p>
+              <p class="fw-semibold mb-2">Rp 599.000</p>
+              <button class="lihat-kelas-btn">Lihat Kelas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center align-items-center border p-4 rounded shadow-custom">
+        <!-- Text Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5 class="fw-bold">Mulai Perjalanan Belajarmu Hari Ini</h5>
+          <p class="text-muted">Gabung dengan 50.000+ pelajar yang telah meningkatkan karir mereka bersama kami.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-primary shadow-btn">Daftar Sekarang</button>
+            <button class="btn btn-outline-dark shadow-btn">Lihat Semua Kelas</button>
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="col-md-6 text-center">
+          <div class="border border-2 p-1 bg-white d-inline-block shadow-custom">
+            <img src="https://via.placeholder.com/300x200" alt="Graduates" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h4 class="text-center fw-bold mb-5">Apa Kata <span class="text-info">Mereka</span></h4>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="card p-3 shadow-custom" style="background-color: #fcd965;">
+            <div class="d-flex align-items-center mb-2">
+              <div class="avatar me-3">DP</div>
+              <div>
+                <small class="fw-bold">Dewi Pratiwi</small><br />
+                <small class="text-muted">UI/UX Designer</small>
+              </div>
+            </div>
+            <div class="mb-2 text-warning">★★★★★</div>
+            <p class="mb-0 small">
+              "Kursus UI/UX Design sangat membantu saya memulai karir sebagai designer. Materinya lengkap dan instrukturnya sangat responsif menjawab pertanyaan."
+            </p>
+          </div>
+        </div>
+  
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="card p-3 shadow-custom" style="background-color: #3ed1d1;">
+            <div class="d-flex align-items-center mb-2">
+              <div class="avatar me-3">BS</div>
+              <div>
+                <small class="fw-bold">Budi Santoso</small><br />
+                <small class="text-muted">Web Developer</small>
+              </div>
+            </div>
+            <div class="mb-2 text-warning">★★★★★</div>
+            <p class="mb-0 small">
+              "Setelah menyelesaikan kursus Python, saya berhasil mendapatkan pekerjaan sebagai developer dengan gaji 2x lipat dari sebelumnya. Investasi terbaik untuk pendidikan!"
+            </p>
+          </div>
+        </div>
+  
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="card p-3 shadow-custom" style="background-color: #fc6969;">
+            <div class="d-flex align-items-center mb-2">
+              <div class="avatar me-3">RA</div>
+              <div>
+                <small class="fw-bold">Rini Anggraini</small><br />
+                <small class="text-muted">Digital Marketer</small>
+              </div>
+            </div>
+            <div class="mb-2 text-warning">★★★★★</div>
+            <p class="mb-0 small">
+              "Kursus Digital Marketing memberikan saya pemahaman komprehensif tentang strategi pemasaran online. Saya langsung bisa menerapkannya untuk bisnis saya."
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4 justify-content-between">
+        <!-- Logo & Sosial Media -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="fw-bold">logo</h4>
+          <p class="small">
+            Platform pelatihan online terbaik di Indonesia dengan berbagai kelas premium untuk meningkatkan karir Anda.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fas fa-times"></i></a>
+            <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <!-- Kategori -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold">Kategori</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white text-decoration-none">Pemrograman</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Desain</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Marketing</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Bisnis</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Data Science</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Public Speaking</a></li>
+          </ul>
+        </div>
+  
+        <!-- Tentang Kami -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold">Tentang Kami</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Karir</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Menjadi Instruktur</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Affiliate Program</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Hubungi Kami</a></li>
+          </ul>
+        </div>
+  
+        <!-- Berlangganan -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="fw-bold">Berlangganan</h6>
+          <p class="small">Dapatkan info terbaru dan promo spesial</p>
+          <form class="d-flex">
+            <input type="email" class="form-control rounded-0" placeholder="Email Anda" />
+            <button class="btn btn-info text-white rounded-0"><i class="fas fa-paper-plane"></i></button>
+          </form>
+  
+          <div class="mt-4">
+            <h6 class="fw-bold">Metode Pembayaran</h6>
+            <div class="d-flex gap-2 mt-2">
+                <div class="bg-white bg-opacity-10 p-2 rounded">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" width="40" alt="Visa">
+                </div>
+                <div class="bg-white bg-opacity-10 p-2 rounded">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo-white.svg" width="40" alt="Mastercard">
+                </div>
+                <div class="bg-white bg-opacity-10 p-2 rounded">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo_white.svg" width="40" alt="PayPal">
+                </div>
+                <div class="bg-white bg-opacity-10 p-2 rounded">
+                  <img src="https://img.icons8.com/ios-filled/50/ffffff/bank.png" width="30" alt="Bank">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Garis pemisah -->
+      <hr class="border-secondary mt-5" />
+  
+      <!-- Copyright -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="small mb-2 mb-md-0">© 2025 logo. Hak Cipta Dilindungi.</p>
+        <div class="d-flex gap-3 small">
+          <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+          <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+          <a href="#" class="text-white text-decoration-none">Bantuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Bootstrap icon (untuk ikon search) -->

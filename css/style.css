@@ -20,3 +20,128 @@ body {
     height: auto;
     box-shadow: 8px 8px 0px #000;
   }
+
+  /* section kategori dan rekomendasi */
+
+  .category-card {
+    height: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 4px 0px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .category-card:active {
+    transform: scale(0.95);
+  }
+
+  .card-class {
+    border-radius: 10px;
+    box-shadow: 2px 4px 0px #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .card-class:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-class:active {
+    transform: scale(0.97);
+  }
+
+  .badge-custom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  .lihat-kelas-btn {
+    background-color: #00d1b2;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .lihat-kelas-btn:hover {
+    background-color: #00b89c;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 150px;
+  }
+
+  /*  */
+
+  .shadow-custom {
+    box-shadow: 4px 6px 0px #000 !important;
+  }
+
+  .shadow-btn {
+    box-shadow: 2px 3px 0px #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .shadow-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .shadow-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Testimoni */
+
+  .shadow-custom {
+    box-shadow: 4px 5px 0px #000;
+    transition: transform 0.3s ease;
+  }
+
+  .shadow-custom:hover {
+    transform: translateY(-5px);
+  }
+
+  .avatar {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  /* footer */
+
+  footer .btn-light:hover {
+    background-color: #ccc;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
