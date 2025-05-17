@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajahi Semua Kelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/kelas.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo Edunest" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Menu Kiri -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Kelas</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Kontak</a></li>
+                </ul>
+
+                <!-- Menu Kanan -->
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-link text-dark fw-semibold">Masuk</a>
+                    <a href="login.html" class="btn btn-primary fw-semibold shadow-sm">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Jelajahi Semua Kelas</h1>
+        <p>Temukan kelas yang sesuai dengan minat dan kebutuhan karir Anda. Pelajari dari para ahli di bidangnya.</p>
+        <input class="form-control w-50 mx-auto mt-3" type="text" placeholder="Cari kelas...">
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Filter Sidebar -->
+            <div class="col-lg-3 mb-4">
+                <div class="filter-box">
+                    <h5>Filter</h5>
+                    <div class="mb-3">
+                        <label class="form-label">Kategori</label>
+                        <div class="form-check"><input class="form-check-input" type="checkbox"> <label
+                                class="form-check-label">Semua Kategori</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox"> <label
+                                class="form-check-label">Desain</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox"> <label
+                                class="form-check-label">Pemrograman</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox"> <label
+                                class="form-check-label">Marketing</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox"> <label
+                                class="form-check-label">Public Speaking</label></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Level</label>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="level"> <label
+                                class="form-check-label">Semua</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="level"> <label
+                                class="form-check-label">Mudah</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="level"> <label
+                                class="form-check-label">Menengah</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="level"> <label
+                                class="form-check-label">Sulit</label></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Harga</label>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="harga"> <label
+                                class="form-check-label">Semua Harga</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="harga"> <label
+                                class="form-check-label">Gratis</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="harga"> <label
+                                class="form-check-label">Berbayar</label></div>
+                    </div>
+                    <button class="btn btn-primary w-100">Terapkan Filter</button>
+                </div>
+            </div>
+
+            <!-- Class Cards -->
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5>Menampilkan 8 Kelas</h5>
+                    <select class="form-select w-auto">
+                        <option>Paling Popular</option>
+                        <option>Terbaru</option>
+                    </select>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Repeat this card for each class -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/ds&ml.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Data Science & Machine Learning</h6>
+                                <p class="text-warning mb-1">★★★★★ 5.0 (321)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Kuasai analisis data dan algoritma machine learning untuk karir di bidang data</p>
+                                <p class="price">Rp 599.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/uiux.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">UI/UX Design dengan Figma</h6>
+                                <p class="text-warning mb-1">★★★★★ 5.0 (1087)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Belajar desain antarmuka dan pengalaman pengguna dengan tools profesional</p>
+                                <p class="price">Rp 649.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/dm3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Digital Marketing Fundamental</h6>
+                                <p class="text-warning mb-1">★★★★★ 4.6 (347)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Pelajari dasar-dasar pemasaran digital untuk bisnis dan karir Anda</p>
+                                <p class="price">GRATIS</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/pm.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Manajemen Proyek Profesional</h6>
+                                <p class="text-warning mb-1">★★★★★ 4.7 (206)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Kuasai teknik manajemen proyek dengan metodologi Agile dan Scrum</p>
+                                <p class="price">Rp 499.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/ps.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Public Speaking Master</h6>
+                                <p class="text-warning mb-1">★★★★★ 4.8 (179)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Tingkatkan kemampuan berbicara dan presentasi di depan umum.</p>
+                                <p class="price">Rp 399.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/python.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Python Programming dari Dasar</h6>
+                                <p class="text-warning mb-1">★★★★★ 4.9 (421)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Pelajari bahasa Python dari dasar hingga mahir dan membuat projek.</p>
+                                <p class="price">Rp 599.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/fullstack.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Full Stack Web Development</h6>
+                                <p class="text-warning mb-1">★★★★★ 4.7 (352)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Kuasai front-end dan back-end untuk menjadi full stack developer.</p>
+                                <p class="price">Rp 799.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="img/procreate.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Digital Illustration dengan Procreate</h6>
+                                <p class="text-warning mb-1">★★★★★ 4.8 (108)</p>
+                                <p class="text-muted" style="font-size: 0.85rem;">Belajar menciptakan ilustrasi digital menggunakan aplikasi Procreate.</p>
+                                <p class="price">Rp 349.000</p>
+                                <a href="#" class="btn btn-outline-primary w-100">Lihat Kelas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-4 d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <!-- Logo & Sosial Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold">logo</h4>
+                    <p class="small">
+                        Platform pelatihan online terbaik di Indonesia dengan berbagai kelas premium untuk meningkatkan
+                        karir Anda.
+                    </p>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fas fa-times"></i></a>
+                        <a href="#" class="btn btn-light btn-sm rounded-0"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kategori -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold">Kategori</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Pemrograman</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Desain</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Marketing</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Bisnis</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Data Science</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Public Speaking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tentang Kami -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold">Tentang Kami</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Karir</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Menjadi Instruktur</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Affiliate Program</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Berlangganan -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold">Berlangganan</h6>
+                    <p class="small">Dapatkan info terbaru dan promo spesial</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-0" placeholder="Email Anda" />
+                        <button class="btn btn-info text-white rounded-0"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+
+                    <div class="mt-4">
+                        <h6 class="fw-bold">Metode Pembayaran</h6>
+                        <div class="d-flex gap-2 mt-2">
+                            <div class="bg-white bg-opacity-10 p-2 rounded">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                                    width="40" alt="Visa">
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-2 rounded">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo-white.svg"
+                                    width="40" alt="Mastercard">
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-2 rounded">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo_white.svg"
+                                    width="40" alt="PayPal">
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-2 rounded">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/bank.png" width="30" alt="Bank">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garis pemisah -->
+            <hr class="border-secondary mt-5" />
+
+            <!-- Copyright -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="small mb-2 mb-md-0">© 2025 logo. Hak Cipta Dilindungi.</p>
+                <div class="d-flex gap-3 small">
+                    <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+                    <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
