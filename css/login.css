@@ -1,6 +1,6 @@
 body {
     background-color: #fefefe;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins';
   }
   .login-container {
     background-color: #b45fe1;
@@ -9,6 +9,7 @@ body {
     border: 2px solid black;
     box-shadow: 5px 5px 0 black;
     border-radius: 10px;
+    margin: 10%;
   }
   .btn-orange {
     background-color: #ff9900;
